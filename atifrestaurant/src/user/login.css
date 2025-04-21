@@ -1,0 +1,48 @@
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .center-form form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align content to the left */
+  }
+  
+  .center-form form .form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%; /* Ensure the input fields take up full width */
+  }
+  
+  /* Add margin between buttons */
+  .center-form form .btn {
+    margin-top: 10px; /* Adds space above the button */
+  }
+  
+  .center-form form .btn:first-child {
+
+    margin-bottom: 15px; /* Adds space below the first button */
+  }
+  .btn:first-child{
+    flex: auto;
+  }
+  
+  .center-form form .btn:nth-child(2) {
+    margin-top: 15px; /* Adds space above the second button */
+  }
+  .button-container {
+    display: flex; /* Use flexbox for better alignment */
+  }
+  
+  .login-button {
+    margin-right: 10px; /* Adjust the value as needed */
+  }
