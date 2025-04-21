@@ -19,7 +19,7 @@ const Signup = () => {
   };
 
   const navigate = useNavigate();
-  const handleSubmit = async (e) => {
+  const  = async (e) => {
     e.preventDefault();
     console.log(formData);
 
