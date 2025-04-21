@@ -19,6 +19,23 @@ function Menu() {
      
   }, []);
 
+
+  useEffect(() =>  {
+    const fetchMenu = async ()=>{
+     try  { 
+        const response = await fetch("/api/admin/menu-items");
+        const data = await response.json();
+        setMenuItems(data);
+} catch (error) {
+    console.error("Error fetching employee: ", error.message);
+  }
+    }
+    fetchMenu()
+     
+  }, []);
+
+
+  
   return (
     <div className="menu-container">
       <h1>Our Menu</h1>
